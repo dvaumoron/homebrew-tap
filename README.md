@@ -1,6 +1,6 @@
 # homebrew-tap
 
-Collection of Homebrew formulae for dvaumoron released project.
+Collection of [Homebrew](https://brew.sh/) formulae for dvaumoron released project.
 
 ## How do I install these formulae?
 

@@ -5,55 +5,60 @@
 class Gotofuenv < Formula
   desc "OpenTofu version manager (inspired by tofuenv, written in Go)"
   homepage "https://github.com/dvaumoron/gotofuenv"
-  version "0.1.2"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.1.2/gotofuenv_0.1.2_darwin_arm64.zip"
-      sha256 "9acf6eb80c30292ac5b48490d24659ebf2702fb35ac75c7f2d94574f831bdf13"
+      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.3.0/gotofuenv_0.3.0_darwin_arm64.zip"
+      sha256 "cb2addd45fa590ff72bcc95cb15215361da44c45a3ec63f3643dc2b29f21d1e3"
 
       def install
         bin.install "gotofuenv"
+        bin.install "terraform"
         bin.install "tofu"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.1.2/gotofuenv_0.1.2_darwin_amd64.zip"
-      sha256 "66271c6075d1475a59f22ee98301b609bc677daed9d42513822037d7e4f262d9"
+      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.3.0/gotofuenv_0.3.0_darwin_amd64.zip"
+      sha256 "5f5b15a4e53454bb9e414ad529b270a059e3d402b8c29feb97dbbc1d0fb939c1"
 
       def install
         bin.install "gotofuenv"
+        bin.install "terraform"
         bin.install "tofu"
       end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.1.2/gotofuenv_0.1.2_linux_amd64.zip"
-      sha256 "cf734d7aec485fb773f13c16e8cc2217db9e8b6ecd49e9c221978a3316627cc2"
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.3.0/gotofuenv_0.3.0_linux_arm.zip"
+      sha256 "2b6a8d4499df5c27112f1d41a2bccaea3ba9f0b53b5baed86639fd3d7546dad3"
 
       def install
         bin.install "gotofuenv"
+        bin.install "terraform"
+        bin.install "tofu"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.3.0/gotofuenv_0.3.0_linux_amd64.zip"
+      sha256 "b301210ed4ddd11b8e924abafe6596d50f74b43a73f5035cf0026604c6ffbc3e"
+
+      def install
+        bin.install "gotofuenv"
+        bin.install "terraform"
         bin.install "tofu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.1.2/gotofuenv_0.1.2_linux_arm64.zip"
-      sha256 "04334b484600c91fba96809496cbfe7025c4ffcb7f92dce46aee2cdc9f54a7ba"
+      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.3.0/gotofuenv_0.3.0_linux_arm64.zip"
+      sha256 "30127d06dfc55ecd9023039bc508e2134b0953dc5290729e51daf03d82e2bedf"
 
       def install
         bin.install "gotofuenv"
-        bin.install "tofu"
-      end
-    end
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.1.2/gotofuenv_0.1.2_linux_arm.zip"
-      sha256 "ae4943c5f574724704834a9109fa3cc3812c002f1ad435052fffbf6ee8246212"
-
-      def install
-        bin.install "gotofuenv"
+        bin.install "terraform"
         bin.install "tofu"
       end
     end

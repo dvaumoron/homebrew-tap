@@ -5,13 +5,13 @@
 class Gotofuenv < Formula
   desc "OpenTofu version manager (inspired by tofuenv, written in Go)"
   homepage "https://github.com/dvaumoron/gotofuenv"
-  version "0.3.0"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.3.0/gotofuenv_0.3.0_darwin_arm64.zip"
-      sha256 "cb2addd45fa590ff72bcc95cb15215361da44c45a3ec63f3643dc2b29f21d1e3"
+      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.4.0/gotofuenv_0.4.0_darwin_arm64.zip"
+      sha256 "4f1526ce634dac152e391ba996fdcc5ab066b55684f404ffff30438da43a8ca0"
 
       def install
         bin.install "gotofuenv"
@@ -20,8 +20,8 @@ class Gotofuenv < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.3.0/gotofuenv_0.3.0_darwin_amd64.zip"
-      sha256 "5f5b15a4e53454bb9e414ad529b270a059e3d402b8c29feb97dbbc1d0fb939c1"
+      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.4.0/gotofuenv_0.4.0_darwin_amd64.zip"
+      sha256 "3553fc7f433be54787fd65b52b8aadf2045134fc3c4c44a411d3a36ed80d3d80"
 
       def install
         bin.install "gotofuenv"
@@ -33,8 +33,8 @@ class Gotofuenv < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.3.0/gotofuenv_0.3.0_linux_arm.zip"
-      sha256 "2b6a8d4499df5c27112f1d41a2bccaea3ba9f0b53b5baed86639fd3d7546dad3"
+      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.4.0/gotofuenv_0.4.0_linux_arm.zip"
+      sha256 "8fbd21e6ed131e6090aa0aad7530403a4aca584635386b0be00d88c1bd0f9841"
 
       def install
         bin.install "gotofuenv"
@@ -43,8 +43,8 @@ class Gotofuenv < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.3.0/gotofuenv_0.3.0_linux_amd64.zip"
-      sha256 "b301210ed4ddd11b8e924abafe6596d50f74b43a73f5035cf0026604c6ffbc3e"
+      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.4.0/gotofuenv_0.4.0_linux_amd64.zip"
+      sha256 "4d1d5291deff7ea51e00c5af96d7548a2a97f451f3a6aff7723e5ceeafc756a8"
 
       def install
         bin.install "gotofuenv"
@@ -53,8 +53,8 @@ class Gotofuenv < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.3.0/gotofuenv_0.3.0_linux_arm64.zip"
-      sha256 "30127d06dfc55ecd9023039bc508e2134b0953dc5290729e51daf03d82e2bedf"
+      url "https://github.com/dvaumoron/gotofuenv/releases/download/v0.4.0/gotofuenv_0.4.0_linux_arm64.zip"
+      sha256 "0fa9fd810f6d4ccf5dddc192581378940ac247be993a77946bb6eafc413a2d4f"
 
       def install
         bin.install "gotofuenv"

@@ -5,21 +5,23 @@
 class Puzzleweaver < Formula
   desc "A ServiceWeaver (https://serviceweaver.dev) compatible modified version of PuzzleWeb (https://github.com/dvaumoron/puzzleweb), embeds all backing services"
   homepage "https://github.com/dvaumoron/puzzleweaver"
-  version "1.11.3"
+  version "1.11.4"
   license "Apache-2.0"
+
+  depends_on "service-weaver"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dvaumoron/puzzleweaver/releases/download/v1.11.3/puzzleweaver_1.11.3_darwin_amd64.zip"
-      sha256 "062d9df7e7dd92ef36f4753ccd7200b265920a7b6a2d3837777ac3a443bacb7d"
+      url "https://github.com/dvaumoron/puzzleweaver/releases/download/v1.11.4/puzzleweaver_1.11.4_darwin_amd64.zip"
+      sha256 "9a91484188958bc0ca8c7f300e869ef83d11a05d6271d35e3e129ce1996dffb0"
 
       def install
         bin.install "puzzleweaver"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dvaumoron/puzzleweaver/releases/download/v1.11.3/puzzleweaver_1.11.3_darwin_arm64.zip"
-      sha256 "f6499f544c40cde0f2c502454ee4e05989be581a9001ea952b4d55af4c1b42e2"
+      url "https://github.com/dvaumoron/puzzleweaver/releases/download/v1.11.4/puzzleweaver_1.11.4_darwin_arm64.zip"
+      sha256 "d1d6cded3d14d980dfe42a08d8e16f2964f792c84a5e2ae9ebdc397d7c6846e1"
 
       def install
         bin.install "puzzleweaver"
@@ -29,16 +31,16 @@ class Puzzleweaver < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/dvaumoron/puzzleweaver/releases/download/v1.11.3/puzzleweaver_1.11.3_linux_amd64.zip"
-      sha256 "5e7afbf9296bf53d52e938d26e42f49d198b3424dc3c9e098bc7afaf5f5c61f2"
+      url "https://github.com/dvaumoron/puzzleweaver/releases/download/v1.11.4/puzzleweaver_1.11.4_linux_amd64.zip"
+      sha256 "2948c6b20872f1595ea06432b22a076907bc7897f9f69d1c0d65646ad7e8961d"
 
       def install
         bin.install "puzzleweaver"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dvaumoron/puzzleweaver/releases/download/v1.11.3/puzzleweaver_1.11.3_linux_arm64.zip"
-      sha256 "b691bff4f29ea57bea9f4a7e3a7623751b5fda944b38069edfdda3baecbb871a"
+      url "https://github.com/dvaumoron/puzzleweaver/releases/download/v1.11.4/puzzleweaver_1.11.4_linux_arm64.zip"
+      sha256 "5304f5c8c56d7ea3f956626d30cf89a801572e0605e45272c9367a88d444d526"
 
       def install
         bin.install "puzzleweaver"

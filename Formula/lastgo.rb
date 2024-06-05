@@ -5,21 +5,21 @@
 class Lastgo < Formula
   desc "provides an alternative go command which is a proxy keeping up to date the Go toolchain (see https://go.dev)."
   homepage "https://github.com/dvaumoron/lastgo"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/dvaumoron/lastgo/releases/download/v0.1.0/lastgo_0.1.0_darwin_amd64.zip"
-      sha256 "0874149dadd32a48d4b33eac011890de27485f6a776cb4bf735025cfde6eacc7"
+      url "https://github.com/dvaumoron/lastgo/releases/download/v0.2.0/lastgo_0.2.0_darwin_amd64.zip"
+      sha256 "97ee1fa3dc1732b0d22dfaa8e68b1b1d81051fa0164e9a43b8ba3b75fc46e103"
 
       def install
         bin.install "go"
       end
     end
     on_arm do
-      url "https://github.com/dvaumoron/lastgo/releases/download/v0.1.0/lastgo_0.1.0_darwin_arm64.zip"
-      sha256 "acb31382bb98101164ad4bbb8e3456eb91621b5156a692e5a55ba33a41dc372b"
+      url "https://github.com/dvaumoron/lastgo/releases/download/v0.2.0/lastgo_0.2.0_darwin_arm64.zip"
+      sha256 "30725a9794387834ed1ef371b2de25ba130ec3db68452e9829b33874a94f81bf"
 
       def install
         bin.install "go"
@@ -30,8 +30,8 @@ class Lastgo < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dvaumoron/lastgo/releases/download/v0.1.0/lastgo_0.1.0_linux_amd64.zip"
-        sha256 "430170604b545ba51431ebb7dedf4edf58f00535170dd8de02dab040a952e72a"
+        url "https://github.com/dvaumoron/lastgo/releases/download/v0.2.0/lastgo_0.2.0_linux_amd64.zip"
+        sha256 "b463d4a28ee9540ff9a653090d042180439514323d59bead6f08e78028d697b4"
 
         def install
           bin.install "go"
@@ -40,8 +40,8 @@ class Lastgo < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/dvaumoron/lastgo/releases/download/v0.1.0/lastgo_0.1.0_linux_arm.zip"
-        sha256 "e858810c655d89bb90fa918fbbf067ed80829d168efa5bfbdfe32121cab1ea73"
+        url "https://github.com/dvaumoron/lastgo/releases/download/v0.2.0/lastgo_0.2.0_linux_arm.zip"
+        sha256 "cca84837bc5b8d7a6ead27927e32b949865e0cbf02c356bc6a276443e1dc3b45"
 
         def install
           bin.install "go"
@@ -50,8 +50,8 @@ class Lastgo < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dvaumoron/lastgo/releases/download/v0.1.0/lastgo_0.1.0_linux_arm64.zip"
-        sha256 "f5ba70a3f6a8fe9ad79dc9486459db60da82ca16616be09fe8f6a51cca3be9a1"
+        url "https://github.com/dvaumoron/lastgo/releases/download/v0.2.0/lastgo_0.2.0_linux_arm64.zip"
+        sha256 "249b2178cd9306ac6f13c1e39a9b6e7ae22dfe0b529b000f0e7bb39aee38fbe0"
 
         def install
           bin.install "go"

@@ -5,13 +5,13 @@
 class Shelltools < Formula
   desc "Some CLI utilities to combine within shell (inspired by https://www.nushell.sh)"
   homepage "https://github.com/dvaumoron/shelltools"
-  version "0.1.4"
+  version "0.1.5"
   license "GPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.4/shelltools_v0.1.4_Darwin_x86_64.tar.gz"
-      sha256 "f77a9a2621ca4ff5ec605802dd88656fefc24da114776fe37cac0915edf1bf72"
+      url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.5/shelltools_v0.1.5_Darwin_x86_64.tar.gz"
+      sha256 "cc795f4eaff8cfe82cbc24e6dfa32ae6b4dddfd5285358f5e8d6088ca87755d2"
 
       def install
         bin.install "cmdforeach"
@@ -19,13 +19,14 @@ class Shelltools < Formula
         bin.install "distinctline"
         bin.install "jsonorderby"
         bin.install "jsontotable"
+        bin.install "jsontransform"
         bin.install "jsonwhere"
         bin.install "linetojson"
       end
     end
     on_arm do
-      url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.4/shelltools_v0.1.4_Darwin_arm64.tar.gz"
-      sha256 "1b1d23defb35e2d776ba533c3eb7a8b16ec715d4a1029f42778a8bb5e58fe0a7"
+      url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.5/shelltools_v0.1.5_Darwin_arm64.tar.gz"
+      sha256 "602a4fc49445b7c0c113c46654c6cdf7877212a49927bceeec03db2cbaad0e36"
 
       def install
         bin.install "cmdforeach"
@@ -33,6 +34,7 @@ class Shelltools < Formula
         bin.install "distinctline"
         bin.install "jsonorderby"
         bin.install "jsontotable"
+        bin.install "jsontransform"
         bin.install "jsonwhere"
         bin.install "linetojson"
       end
@@ -42,8 +44,8 @@ class Shelltools < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.4/shelltools_v0.1.4_Linux_x86_64.tar.gz"
-        sha256 "009f8b9bff70a77d34b93bf7ef601b83138a3f1ea5b50c98de7dd0f7ba888914"
+        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.5/shelltools_v0.1.5_Linux_x86_64.tar.gz"
+        sha256 "fd7cf13f3e871a665542c182293d970dce905e60aec5a2b470de7f3599261649"
 
         def install
           bin.install "cmdforeach"
@@ -51,6 +53,7 @@ class Shelltools < Formula
           bin.install "distinctline"
           bin.install "jsonorderby"
           bin.install "jsontotable"
+          bin.install "jsontransform"
           bin.install "jsonwhere"
           bin.install "linetojson"
         end
@@ -58,8 +61,8 @@ class Shelltools < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.4/shelltools_v0.1.4_Linux_armv6.tar.gz"
-        sha256 "dd0f6f760f8afa9ff8bce75c9ec71233f87e1c8c6356eadb2cc51be53379dcac"
+        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.5/shelltools_v0.1.5_Linux_armv6.tar.gz"
+        sha256 "fa65ac5baa775da013222e892a8bfe8cc38c850c9aa0c29efe2a4e6dd7fd0457"
 
         def install
           bin.install "cmdforeach"
@@ -67,6 +70,7 @@ class Shelltools < Formula
           bin.install "distinctline"
           bin.install "jsonorderby"
           bin.install "jsontotable"
+          bin.install "jsontransform"
           bin.install "jsonwhere"
           bin.install "linetojson"
         end
@@ -74,8 +78,8 @@ class Shelltools < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.4/shelltools_v0.1.4_Linux_arm64.tar.gz"
-        sha256 "ecabb7d1df96c07d45bfe2fbcd3ab25cec7bf6816b72eb91e0daf3eddf2e3071"
+        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.5/shelltools_v0.1.5_Linux_arm64.tar.gz"
+        sha256 "d7303ca993759cbff346cd62432780e7c82844abe863ac3cf34d78514e886dc7"
 
         def install
           bin.install "cmdforeach"
@@ -83,6 +87,7 @@ class Shelltools < Formula
           bin.install "distinctline"
           bin.install "jsonorderby"
           bin.install "jsontotable"
+          bin.install "jsontransform"
           bin.install "jsonwhere"
           bin.install "linetojson"
         end

@@ -5,13 +5,13 @@
 class Shelltools < Formula
   desc "Some CLI utilities to combine within shell (inspired by https://www.nushell.sh)"
   homepage "https://github.com/dvaumoron/shelltools"
-  version "0.1.5"
+  version "0.1.6"
   license "GPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.5/shelltools_v0.1.5_Darwin_x86_64.tar.gz"
-      sha256 "cc795f4eaff8cfe82cbc24e6dfa32ae6b4dddfd5285358f5e8d6088ca87755d2"
+      url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.6/shelltools_v0.1.6_Darwin_x86_64.tar.gz"
+      sha256 "f1afe7a3d794826aa9946756c683317fc4cabc52f83c3eeb6fefcc0932affcbb"
 
       def install
         bin.install "cmdforeach"
@@ -25,8 +25,8 @@ class Shelltools < Formula
       end
     end
     on_arm do
-      url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.5/shelltools_v0.1.5_Darwin_arm64.tar.gz"
-      sha256 "602a4fc49445b7c0c113c46654c6cdf7877212a49927bceeec03db2cbaad0e36"
+      url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.6/shelltools_v0.1.6_Darwin_arm64.tar.gz"
+      sha256 "b001dc373c73f964a29bf2ace39e77b905fee71f671315134954635e3ead66d2"
 
       def install
         bin.install "cmdforeach"
@@ -44,8 +44,8 @@ class Shelltools < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.5/shelltools_v0.1.5_Linux_x86_64.tar.gz"
-        sha256 "fd7cf13f3e871a665542c182293d970dce905e60aec5a2b470de7f3599261649"
+        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.6/shelltools_v0.1.6_Linux_x86_64.tar.gz"
+        sha256 "258dababf1e66b22649bf491c955bdad06b6b247f46973778fc0f90e409d8512"
 
         def install
           bin.install "cmdforeach"
@@ -61,8 +61,8 @@ class Shelltools < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.5/shelltools_v0.1.5_Linux_armv6.tar.gz"
-        sha256 "fa65ac5baa775da013222e892a8bfe8cc38c850c9aa0c29efe2a4e6dd7fd0457"
+        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.6/shelltools_v0.1.6_Linux_armv6.tar.gz"
+        sha256 "7cc32dbf8e9f7d8384d57c01fd6a183c62911912f2214465b6e8cde1429c0b58"
 
         def install
           bin.install "cmdforeach"
@@ -78,8 +78,8 @@ class Shelltools < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.5/shelltools_v0.1.5_Linux_arm64.tar.gz"
-        sha256 "d7303ca993759cbff346cd62432780e7c82844abe863ac3cf34d78514e886dc7"
+        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.6/shelltools_v0.1.6_Linux_arm64.tar.gz"
+        sha256 "ece5d40ed517a9c33e16bc23145ab36e18919a30bb73fd84900a35aade0be25d"
 
         def install
           bin.install "cmdforeach"

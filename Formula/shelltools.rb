@@ -5,17 +5,18 @@
 class Shelltools < Formula
   desc "Some CLI utilities to combine within shell (inspired by https://www.nushell.sh)"
   homepage "https://github.com/dvaumoron/shelltools"
-  version "0.1.3"
+  version "0.1.4"
   license "GPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.3/shelltools_v0.1.3_Darwin_x86_64.tar.gz"
-      sha256 "cbb3a1c3a95e2ca92c52020fa34da4517e899662c83a33ce26c704a110319631"
+      url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.4/shelltools_v0.1.4_Darwin_x86_64.tar.gz"
+      sha256 "f77a9a2621ca4ff5ec605802dd88656fefc24da114776fe37cac0915edf1bf72"
 
       def install
         bin.install "cmdforeach"
         bin.install "cmdwithall"
+        bin.install "distinctline"
         bin.install "jsonorderby"
         bin.install "jsontotable"
         bin.install "jsonwhere"
@@ -23,12 +24,13 @@ class Shelltools < Formula
       end
     end
     on_arm do
-      url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.3/shelltools_v0.1.3_Darwin_arm64.tar.gz"
-      sha256 "bbc8c7299c0b139593ce9eae8b422dc16a26b3b76e959d8efc1ad90fdde1176d"
+      url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.4/shelltools_v0.1.4_Darwin_arm64.tar.gz"
+      sha256 "1b1d23defb35e2d776ba533c3eb7a8b16ec715d4a1029f42778a8bb5e58fe0a7"
 
       def install
         bin.install "cmdforeach"
         bin.install "cmdwithall"
+        bin.install "distinctline"
         bin.install "jsonorderby"
         bin.install "jsontotable"
         bin.install "jsonwhere"
@@ -40,12 +42,13 @@ class Shelltools < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.3/shelltools_v0.1.3_Linux_x86_64.tar.gz"
-        sha256 "349b7f9df69f76d1f5a652e997bc7468bea623b801cfad41b51583218d07a235"
+        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.4/shelltools_v0.1.4_Linux_x86_64.tar.gz"
+        sha256 "009f8b9bff70a77d34b93bf7ef601b83138a3f1ea5b50c98de7dd0f7ba888914"
 
         def install
           bin.install "cmdforeach"
           bin.install "cmdwithall"
+          bin.install "distinctline"
           bin.install "jsonorderby"
           bin.install "jsontotable"
           bin.install "jsonwhere"
@@ -55,12 +58,13 @@ class Shelltools < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.3/shelltools_v0.1.3_Linux_armv6.tar.gz"
-        sha256 "55cf9f607caa702b9d26f728c74ee7c6fef668d86cb192669f245565629b5a39"
+        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.4/shelltools_v0.1.4_Linux_armv6.tar.gz"
+        sha256 "dd0f6f760f8afa9ff8bce75c9ec71233f87e1c8c6356eadb2cc51be53379dcac"
 
         def install
           bin.install "cmdforeach"
           bin.install "cmdwithall"
+          bin.install "distinctline"
           bin.install "jsonorderby"
           bin.install "jsontotable"
           bin.install "jsonwhere"
@@ -70,12 +74,13 @@ class Shelltools < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.3/shelltools_v0.1.3_Linux_arm64.tar.gz"
-        sha256 "3f4426e1439c514d67eb8fc45b670b7b0f62a4dc42720479ffea93c767251983"
+        url "https://github.com/dvaumoron/shelltools/releases/download/v0.1.4/shelltools_v0.1.4_Linux_arm64.tar.gz"
+        sha256 "ecabb7d1df96c07d45bfe2fbcd3ab25cec7bf6816b72eb91e0daf3eddf2e3071"
 
         def install
           bin.install "cmdforeach"
           bin.install "cmdwithall"
+          bin.install "distinctline"
           bin.install "jsonorderby"
           bin.install "jsontotable"
           bin.install "jsonwhere"

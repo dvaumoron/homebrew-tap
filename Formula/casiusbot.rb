@@ -5,21 +5,21 @@
 class Casiusbot < Formula
   desc "A Discord bot (https://discord.com) with several features"
   homepage "https://github.com/dvaumoron/casiusbot"
-  version "1.8.0"
+  version "1.7.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dvaumoron/casiusbot/releases/download/v1.8.0/casiusbot_1.8.0_darwin_amd64.zip"
-      sha256 "4783264dc44542acd8853860707f1c4092a6079921f1de5d361ec7b89e3f8f8d"
+      url "https://github.com/dvaumoron/casiusbot/releases/download/v1.7.1/casiusbot_1.7.1_darwin_amd64.zip"
+      sha256 "81304f841170fd09516081ea06cb0a58775ba28282716d2f05e21b46cf41a517"
 
       def install
         bin.install "casiusbot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dvaumoron/casiusbot/releases/download/v1.8.0/casiusbot_1.8.0_darwin_arm64.zip"
-      sha256 "b8fd6e33b9d94a52f0d785275d62fc2e80a41d498c4a1e4adfc8797217070510"
+      url "https://github.com/dvaumoron/casiusbot/releases/download/v1.7.1/casiusbot_1.7.1_darwin_arm64.zip"
+      sha256 "44e982dafb9ba10ba84857ca11d54239848735ea967fe9f47becaa028ab8192c"
 
       def install
         bin.install "casiusbot"
@@ -30,8 +30,8 @@ class Casiusbot < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dvaumoron/casiusbot/releases/download/v1.8.0/casiusbot_1.8.0_linux_amd64.zip"
-        sha256 "da7381a11bf3480e427dad2742cad97965cbc2a52e20d5cac185c80870cda37b"
+        url "https://github.com/dvaumoron/casiusbot/releases/download/v1.7.1/casiusbot_1.7.1_linux_amd64.zip"
+        sha256 "03606184eec81b69cdbf7a6eba0eb02930123b79d8d93070063901d3f3dae2a4"
 
         def install
           bin.install "casiusbot"
@@ -40,8 +40,8 @@ class Casiusbot < Formula
     end
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/dvaumoron/casiusbot/releases/download/v1.8.0/casiusbot_1.8.0_linux_arm.zip"
-        sha256 "cab311e4c83a767fe2ae3d79d8d6132ddc6f824141f37f324b933925b64422e1"
+        url "https://github.com/dvaumoron/casiusbot/releases/download/v1.7.1/casiusbot_1.7.1_linux_arm.zip"
+        sha256 "a3acabe7973d37cc4fa72004f42549ad4c72540a7a4ce4831b6f18e45365ffe8"
 
         def install
           bin.install "casiusbot"
@@ -50,8 +50,8 @@ class Casiusbot < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dvaumoron/casiusbot/releases/download/v1.8.0/casiusbot_1.8.0_linux_arm64.zip"
-        sha256 "484c9300ca968839ef478a4002d23c2ef1e9c2fc63a46b437b4730c28fdf2d42"
+        url "https://github.com/dvaumoron/casiusbot/releases/download/v1.7.1/casiusbot_1.7.1_linux_arm64.zip"
+        sha256 "ebfb4bfb92c42baecb4531d6f3a671e3549545007d742f6d4bdd65fea86e0c46"
 
         def install
           bin.install "casiusbot"
